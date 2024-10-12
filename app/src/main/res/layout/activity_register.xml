@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo o imagen representativa del proyecto -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Campo de texto para el nombre -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo de texto para el correo electrónico -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo de texto para la contraseña -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo de texto para confirmar la contraseña -->
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botón de registrarse -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:textColor="@color/white"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Texto para volver a la pantalla de inicio de sesión -->
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes una cuenta? Inicia sesión"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
